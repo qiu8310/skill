@@ -1,0 +1,48 @@
+/**
+ * Create by Mora at 2017-11-10 15:09
+ * All right reserved
+ */
+
+.bodyCareerSystemV3 {
+  background: #F5F5F5;
+}
+.pCareerSystemV3 {
+  .item {
+    display: block;
+    margin-right: 30px;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    background: #D8D8D8;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    padding: 38px 26px;
+    line-height: 24px;
+
+    &.active {
+      color: $activeColor;
+      background: white;
+    }
+  }
+
+  .level {
+    h2 {
+      padding: 0 20px;
+      margin-bottom: 10px;
+    }
+    padding: 16px 0;
+    background-image: linear-gradient(-180deg, #EDEDED 0%, #F5F5F5 100%);
+  }
+
+  .bottom {
+    background: white;
+    font-weight: bold;
+    line-height: 49px;
+    padding: 0 20px;
+    span {
+      color: $activeColor;
+    }
+  }
+}

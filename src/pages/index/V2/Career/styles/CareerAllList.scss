@@ -1,0 +1,75 @@
+/**
+ * Create by Mora at 2017-10-18 15:44
+ * All right reserved
+ */
+
+.bodyCareerAllList {
+  background: white;
+}
+
+.pCareerAllList {
+  .filterTrigger {
+    height: 44px;
+    line-height: 44px;
+    margin-top: -10px;
+    text-align: center;
+    font-size: 15px;
+
+    box-shadow: 0 1px 0 0 rgba(0, 0, 0, .08);
+    margin-bottom: 25px;
+
+    padding: 0 22px;
+
+    a {
+      color: $activeColor;
+    }
+    p {
+      color: #9B9B9B;
+    }
+  }
+}
+
+.wFilter {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: white;
+  .label {
+    display: block;
+    text-align: center;
+    font-size: 15px;
+    color: black;
+    line-height: 55px;
+    margin-top: 10px;
+  }
+  .choices {
+    padding: 0 36px;
+  }
+  .choice {
+    width: 140px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    border-radius: 17px;
+    color: white;
+    background: #E6E6E6;
+    &.active {
+      background: #4A4A4A;
+    }
+  }
+
+  .opts {
+    margin-top: 50px;
+  }
+
+  .cancel {
+    display: block;
+    width: 160px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    margin: 20px auto;
+  }
+}

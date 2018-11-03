@@ -1,0 +1,28 @@
+/**
+ * Create by Mora at 2017-11-27 14:20
+ * All right reserved
+ */
+.wCircle {
+  position: relative;
+}
+.wCircle-wrap {
+  width: 100%;
+  padding-top: 100%;
+  position: relative;
+}
+.wCircle-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: rotateZ(-90deg);
+  transform-origin: center center;
+}
+.wCircle-content {
+  width: 80%;
+}
+
+.wCircle-stroke {
+  transition: stroke-dashoffset 1.2s linear;
+}

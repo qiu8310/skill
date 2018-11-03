@@ -1,0 +1,42 @@
+/**
+ * Create by Mora at 2017-11-14 17:04
+ * All right reserved
+ */
+
+.pUserV3 {
+  .head {
+    padding: 20px;
+
+    .name {
+      display: block;
+      font-size: 24px;
+      color: black;
+      line-height: 34px;
+      height: 34px;
+      font-weight: bold;
+    }
+  }
+
+  .test {
+    display: block;
+    margin: 0 auto;
+    padding: 15px 20px;
+    color: white;
+    width: 335px;
+    height: 80px;
+    background: $activeColor url("./images/arrow@3x.png") no-repeat;
+    background-size: 10px auto;
+    background-position: 310px center;
+    border-radius: 4px;
+
+    line-height: 28px;
+    font-size: 16px;
+  }
+
+  .nofav {
+    font-size: 12px;
+    text-align: center;
+    color: $grayColor;
+  }
+}
+

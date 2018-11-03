@@ -1,0 +1,43 @@
+/**
+ * Create by Mora at 2017-10-18 17:20
+ * All right reserved
+ */
+
+.wProgress {
+  height: 20px;
+
+  .l {
+    display: block;
+    line-height: 20px;
+    width: 40px;
+    text-align: center;
+    font-size: 13px;
+  }
+
+  .road {
+    height: 12px;
+    margin-top: 4px;
+    border-radius: 6px;
+    background-image: linear-gradient(to right, #8FED30 0%, #FFC64F 51%, #FF7777 100%);
+  }
+
+  .value {
+    height: 12px;
+    background: #E6E6E6;
+    border-radius: 0 6px 6px 0;
+    float: right;
+  }
+
+  .cursor {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    border: 1px solid #E6E6E6;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .1);
+    position: relative;
+    top: -4px;
+    left: -10px;
+  }
+}

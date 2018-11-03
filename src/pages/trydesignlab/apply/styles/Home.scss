@@ -1,0 +1,234 @@
+/**
+ * Create by Mora at 2017-11-30 18:51
+ * All right reserved
+ */
+
+.pHome {
+  .gMarkdown {
+    padding: 0;
+  }
+  .head {
+    text-align: center;
+    background: $activeColor;
+    padding: 30px 15px 10px;
+    color: white;
+
+    label {
+      color: #C4CBD4;
+      text-transform: uppercase;
+      display: block;
+      line-height: 30px;
+      font-size: 16px;
+    }
+
+    img {
+      width: 100px;
+      height: 100px;
+      display: block;
+      margin: 15px auto;
+    }
+  }
+
+  .level-2-1, .level-2-2 {
+    padding: 10px 15px;
+  }
+
+  .forYou {
+    ul {
+      list-style: none;
+    }
+    li {
+      position: relative;
+      margin: 0;
+      padding-left: 104px;
+    }
+    h6 {
+      font-size: 14px;
+    }
+    .img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 104px;
+      height: auto;
+    }
+  }
+
+  // exports
+  .level-2-2 .level-3 {
+    h3 {
+      margin-top: 30px;
+      color: #333;
+      font-weight: normal;
+      font-size: 18px;
+      text-align: center;
+    }
+  }
+  .level-2-2 .level-3-2 {
+    ul {
+      padding: 0 20px;
+      list-style: none;
+    }
+    li {
+      display: inline-block;
+      width: 33.3333%;
+      flex: 1;
+      max-width: 100px;
+      position: relative;
+      margin: 10px 0;
+    }
+    .mentor {
+      position: relative;
+      left: 50%;
+      margin-left: -36px;
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+    }
+    .company {
+      display: block;
+      position: absolute;
+      right: 15px;
+      bottom: 0;
+      width: 30px;
+      height: auto;
+      border: 2px solid white;
+      // border-radius: 50%;
+    }
+    li:nth-child(1) .company, li:nth-child(2) .company {
+      height: 14px;
+      width: auto;
+      right: 0;
+      bottom: 4px;
+    }
+    li:nth-child(4) .company, li:nth-child(5) .company {
+      border-radius: 50%;
+    }
+  }
+  .level-2-2 .level-3-3 {
+    blockquote {
+      border-left: 0;
+      display: block;
+      background: #fefbf9;
+      padding: 20px 25px;
+      margin: 0 -15px;
+      border-radius: 3px;
+      color: #000;
+      p {
+        text-align: center;
+      }
+    }
+    p {
+      margin-top: 8px;
+      text-align: right;
+    }
+    em {
+      display: block;
+    }
+  }
+
+  .price {
+    background: #FDF8F6;
+    text-align: center;
+    overflow: hidden;
+
+    p:nth-child(1) {
+      padding: 20px 0;
+      font-size: 17px;
+      line-height: 24px;
+      color: #88a1bd;
+      font-weight: 400;
+      border-bottom: 1px solid #ebebeb;
+
+      strong {
+        font-size: 2em;
+      }
+    }
+    p:nth-child(2) {
+      color: #72777a;
+      font-size: 14px;
+      line-height: 1.4;
+    }
+
+    ul {
+      display: flex;
+      list-style: none;
+      @media screen and (max-width: 700px) {
+        flex-direction: column;
+      }
+    }
+    li {
+      margin: 0;
+      flex: 1;
+    }
+
+    img {
+      width: auto;
+      height: 120px;
+    }
+
+    label {
+      color: #72777a;
+      display: block;
+      font-size: 15px;
+      margin: 30px 0;
+    }
+  }
+
+  .learn {
+    padding: 10px;
+    background: #FAFAFA;
+    text-align: center;
+
+    > p {
+      margin: 20px auto;
+      color: #72777a;
+      font-size: 14px;
+      line-height: 1.4;
+    }
+  }
+  .weeks {
+    font-size: 10px;
+    color: #72777a;
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+
+    @media screen and (max-width: 980px) {
+      flex-direction: column;
+      font-size: 14px;
+      width: 100%;
+    }
+
+    .week {
+      flex: 1;
+      padding: 10px 20px;
+      margin: 10px;
+      background: white;
+    }
+
+    h3 {
+      border-bottom: 1px solid #ebebeb;
+      color: #333;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 18px;
+      padding-bottom: 5px;
+    }
+  }
+
+  .enroll {
+    display: block;
+    font-size: 14px;
+    height: 44px;
+    line-height: 43px;
+    border-radius: 30px;
+    width: 120px;
+    text-align: center;
+    margin: 50px auto;
+    background-color: #f15b2a;
+    color: #fff;
+    border: 0;
+  }
+}

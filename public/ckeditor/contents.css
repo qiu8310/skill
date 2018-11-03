@@ -1,0 +1,123 @@
+body.ck {
+  font-size: 12px;
+  margin: 12px; }
+
+.ck {
+  font-family: "PingFangSC-Regular", "Helvetica Neue", Helvetica, Arial, Tahoma, sans-serif;
+  color: #333;
+  /* Widget Styles */ }
+  .ck.cke_editable, .ck .cke_editable {
+    font-size: 13px;
+    line-height: 1.5;
+    word-wrap: break-word; }
+  .ck blockquote {
+    font-style: italic;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    padding: 2px 0;
+    border-style: solid;
+    border-color: #CCC;
+    border-width: 0; }
+  .ck.cke_contents_ltr blockquote, .ck .cke_contents_ltr blockquote {
+    padding-left: 20px;
+    padding-right: 8px;
+    border-left-width: 5px; }
+  .ck.cke_contents_rtl blockquote, .ck .cke_contents_rtl blockquote {
+    padding-left: 8px;
+    padding-right: 20px;
+    border-right-width: 5px; }
+  .ck a {
+    color: #0782C1; }
+  .ck ol,
+  .ck ul,
+  .ck dl {
+    /* preserved spaces for list items with text direction other than the list. (#6249, #8049) */
+    padding: 0 40px; }
+  .ck h1,
+  .ck h2,
+  .ck h3,
+  .ck h4,
+  .ck h5,
+  .ck h6 {
+    font-weight: normal;
+    line-height: 1.2; }
+  .ck hr {
+    border: 0;
+    border-top: 1px solid #CCC; }
+  .ck img {
+    max-width: 100%; }
+  .ck img.right {
+    border: 1px solid #CCC;
+    float: right;
+    margin-left: 15px;
+    padding: 5px; }
+  .ck img.left {
+    border: 1px solid #CCC;
+    float: left;
+    margin-right: 15px;
+    padding: 5px; }
+  .ck pre {
+    white-space: pre-wrap;
+    /* CSS 2.1 */
+    word-wrap: break-word;
+    tab-size: 4; }
+  .ck .marker {
+    background-color: Yellow; }
+  .ck span[lang] {
+    font-style: italic; }
+  .ck figure {
+    text-align: center;
+    border: solid 1px #CCC;
+    border-radius: 2px;
+    background: rgba(0, 0, 0, 0.05);
+    padding: 10px;
+    margin: 10px 20px;
+    display: inline-block; }
+  .ck figure > figcaption {
+    text-align: center;
+    display: block;
+    /* For IE8 */ }
+  .ck a > img {
+    padding: 1px;
+    margin: 1px;
+    border: none;
+    outline: 1px solid #0782C1; }
+  .ck .code-featured {
+    border: 5px solid red; }
+  .ck .math-featured {
+    padding: 20px;
+    box-shadow: 0 0 2px #C80000;
+    background-color: rgba(255, 0, 0, 0.05);
+    margin: 10px; }
+  .ck .image-clean {
+    border: 0;
+    background: none;
+    padding: 0; }
+  .ck .image-clean > figcaption {
+    font-size: .9em;
+    text-align: right; }
+  .ck .image-grayscale {
+    background-color: white;
+    color: #666; }
+  .ck .image-grayscale img,
+  .ck img.image-grayscale {
+    filter: grayscale(100%); }
+  .ck .embed-240p {
+    max-width: 426px;
+    max-height: 240px;
+    margin: 0 auto; }
+  .ck .embed-360p {
+    max-width: 640px;
+    max-height: 360px;
+    margin: 0 auto; }
+  .ck .embed-480p {
+    max-width: 854px;
+    max-height: 480px;
+    margin: 0 auto; }
+  .ck .embed-720p {
+    max-width: 1280px;
+    max-height: 720px;
+    margin: 0 auto; }
+  .ck .embed-1080p {
+    max-width: 1920px;
+    max-height: 1080px;
+    margin: 0 auto; }

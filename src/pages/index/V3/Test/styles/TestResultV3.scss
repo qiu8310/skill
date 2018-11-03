@@ -1,0 +1,56 @@
+/**
+ * Create by Mora at 2017-11-10 10:38
+ * All right reserved
+ */
+
+.bodyTestResultV3 {
+  background: whitesmoke;
+}
+.pTestResultV3 {
+  .head {
+    padding: 20px 25px 60px;
+    background: $activeColor;
+    line-height: 20px;
+    letter-spacing: 1.5px;
+
+    .l2 {
+      line-height: 40px;
+      font-size: 28px;
+      margin: 5px 0 15px;
+    }
+  }
+
+  .chart {
+    width: 335px;
+    margin: 0 auto;
+    position: relative;
+    top: -40px;
+    background: white;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .03);
+    border-radius: 4px;
+
+    color: $activeColor;
+    text-align: center;
+
+    .l1 { margin: 15px 0 5px; }
+    .l2 { font-size: 24px; }
+
+    .canvas {
+      width: 280px;
+      margin: -20px auto 0;
+    }
+  }
+
+  .btns {
+    padding: 0 20px;
+    margin-bottom: 20px;
+  }
+
+  .btn {
+    border-radius: 4px;
+  }
+
+  .btn:last-child {
+    border-color: transparent !important;
+  }
+}

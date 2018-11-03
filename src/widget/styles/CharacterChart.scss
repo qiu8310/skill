@@ -1,0 +1,16 @@
+/**
+ * Create by Mora at 2017-10-13 10:40
+ * All right reserved
+ */
+
+.wCharacterChart {
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+
+  canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}

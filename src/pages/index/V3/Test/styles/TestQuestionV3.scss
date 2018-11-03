@@ -1,0 +1,61 @@
+/**
+ * Create by Mora at 2017-11-10 10:37
+ * All right reserved
+ */
+
+.bodyTestQuestionV3 {
+  background: whitesmoke;
+}
+.pTestQuestionV3 {
+  .hero {
+    background: #16BCD9 url("./images/test-hero-75x87@3x.png") no-repeat 31px 31px;
+    background-size: 75px 87px;
+    color: white;
+    height: 150px;
+    line-height: 24px;
+    padding: 27px 23px 27px 137px;
+    margin-bottom: 20px;
+  }
+
+  .question {
+    position: relative;
+    width: 335px;
+    height: 110px;
+    padding: 15px;
+    border-radius: 4px;
+    background: white;
+    margin: 0 auto 10px;
+    color: black;
+  }
+
+  .choices {
+    font-size: 16px;
+    width: 150px;
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    margin-left: -75px;
+  }
+
+  .icon {
+    display: block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid #4A4A4A;
+    margin-right: 8px;
+  }
+
+  .active .icon {
+    background: url("./images/choice-active-25x25@3x.png") no-repeat;
+    background-size: 25px 25px;
+    border: none;
+  }
+
+  .btn {
+    font-size: 18px;
+    border-radius: 4px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+}

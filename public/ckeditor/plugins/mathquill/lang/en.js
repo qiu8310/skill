@@ -1,0 +1,1 @@
+﻿CKEDITOR.plugins.setLang("mathquill","en",{insert:"Insert Math Formula",edit:"Edit Math Formula",dialogTitle:"Mathquill Editor",inputMath:"Type Math Here: ",insertLine4:"Insert 4 underline",insertLine8:"Insert 8 underline"});

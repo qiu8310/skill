@@ -1,0 +1,187 @@
+/**
+ * Create by Mora at 2017-10-19 10:31
+ * All right reserved
+ */
+
+@import "mora-common/style/mixin/index";
+.bodyCareer {
+  background: white;
+}
+.pCareer {
+  .heart {
+    position: fixed;
+    display: block;
+    @include circle(36px);
+    background: #494949 url("./images/heart@3x.png") no-repeat center center;
+    background-size: 18px 16px;
+    bottom: 20px;
+    right: 20px;
+    &.active {
+      background-image: url("./images/heart-active@3x.png");
+    }
+  }
+  .m {
+    width: 330px;
+    margin: 30px auto 0;
+    padding-bottom: 35px;
+    border-bottom: 1px solid #979797;
+    border-width: .5px;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    h3 {
+      display: block;
+      font-size: 21px;
+      font-weight: bold;
+      margin: 27px 0 10px;
+    }
+    p {
+      font-size: 15px;
+      line-height: 25px;
+      text-align: justify;
+      letter-spacing: 2px;
+    }
+  }
+  .mDescription {
+
+  }
+
+  .mCharacter {
+
+  }
+
+  .mStatistics {
+    .stat {
+      margin-bottom: 32px;
+    }
+    .l {
+      color: #9B9B9B;
+      font-size: 13px;
+      margin-bottom: 8px;
+    }
+    .v {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .age {
+      font-size: 64px;
+      line-height: 70px;
+      font-weight: bold;
+    }
+    .rate {
+      font-size: 24px;
+      font-weight: bold;
+      .blue { color: #47A2EA; }
+      .red { color: #FF7777; }
+    }
+    .p {
+      margin-top: 16px;
+    }
+    .boygirl {
+      width: 264px;
+      margin: 16px auto 0;
+    }
+    .boy {
+      width: 11px;
+      height: 30px;
+      background: url("./images/boy@3x.png") no-repeat;
+      background-size: 11px 30px;
+    }
+    .girl {
+      width: 14px;
+      height: 30px;
+      background: url("./images/girl@3x.png") no-repeat;
+      background-size: 14px 30px;
+    }
+  }
+
+  .mResource {
+    h4 {
+      font-size: 15px;
+      margin-bottom: 20px;
+    }
+    .c {
+      margin-bottom: 40px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    .article {
+      display: block;
+      background: #FFFFFF;
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .08);
+      border-radius: 8px;
+      padding: 16px;
+      margin-bottom: 15px;
+    }
+    .atitle {
+      font-size: 18px;
+      color: black;
+      margin-bottom: 8px;
+    }
+    .adesc {
+      font-size: 13px;
+    }
+
+    .video {
+      display: block;
+      position: relative;
+      width: 330px;
+      height: 220px;
+      margin-bottom: 20px;
+      overflow: hidden;
+
+      box-shadow: 0 10px 20px 0 rgba(0, 0, 0, .14);
+      border-radius: 14px;
+    }
+    .play {
+      display: block;
+      position: absolute;
+      top: 60px;
+      left: 50%;
+      margin-left: -24px;
+
+      width: 48px;
+      height: 48px;
+      background: #3D3D3D;
+      border-radius: 50%;
+
+      &::after {
+        position: absolute;
+        content: "";
+        display: block;
+        top: 18px;
+        left: 18px;
+        @include triangle(14px 14px, white, right);
+      }
+    }
+    .bottom {
+      padding: 20px;
+      color: white;
+      position: absolute;
+      height: 90px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, .7);
+    }
+    .vtitle {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .vdesc {
+      font-size: 16px;
+    }
+  }
+
+  .mRelative {
+    width: auto;
+    h3 {
+      width: 330px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}

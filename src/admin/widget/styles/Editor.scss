@@ -1,0 +1,32 @@
+.wEditor {
+  position: relative;
+  .cke_textarea_inline {
+    display: inline-block;
+    width: 100%;
+    min-height: 66px;
+    height: auto;
+    padding: 6px 7px;
+    transition: all .3s;
+
+    font-size: 13px;
+    line-height: 1.5;
+    color: rgba(0, 0, 0, .65);
+    background-color: #FFF;
+    background-image: none;
+    border: 1px solid #D9D9D9;
+    border-radius: 4px;
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 2px rgba(16, 142, 233, .2);
+    }
+  }
+
+  .cke_textarea_inline[contenteditable="false"] {
+    cursor: not-allowed;
+    pointer-events: none;
+    // background: #EEF1F2;
+    // border-color: #D4D4D4;
+    -webkit-user-select: none;
+  }
+}

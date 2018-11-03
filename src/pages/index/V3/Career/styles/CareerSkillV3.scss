@@ -1,0 +1,82 @@
+/**
+ * Create by Mora at 2017-11-13 11:05
+ * All right reserved
+ */
+
+.bodyCareerSkillV3 {
+  background: #F5F5F5;
+}
+.pCareerSkillV3 .gMarkdown {
+  padding: 0;
+  p, h2 {
+    margin: 0;
+  }
+
+  h2 {
+    display: block;
+    font-size: 14px;
+    font-weight: normal;
+    color: #4A4A4A;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 20px;
+  }
+
+  ul {
+    padding: 0 10px;
+    background: white;
+  }
+  li {
+    padding: 20px 40px 20px 10px;
+    border-bottom: 1px solid #E0E0E0;
+    background: url("./images/arrow@3x.png") no-repeat right center;
+    background-size: 7px auto;
+    &.noLink {
+      padding-right: 10px;
+      background: none;
+    }
+    &:last-child {
+      border-bottom-color: transparent;
+    }
+
+    p:nth-child(1) {
+      color: black;
+      font-weight: bold;
+      line-height: 20px;
+    }
+    p:nth-child(2) {
+      color: #4A4A4A;
+      font-size: 12px;
+      margin-top: 10px;
+      line-height: 17px;
+      max-height: 34px;
+      display: -webkit-box;
+      overflow: hidden;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+    }
+  }
+
+  .ui {
+    padding-left: 86px;
+    position: relative;
+    &::before {
+      position: absolute;
+      left: 5px;
+      top: 0;
+      bottom: 0;
+      width: 66px;
+      content: "";
+      display: block;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: contain;
+    }
+  }
+  @for $i from 1 through 13 {
+    .ui#{$i}::before {
+      background-image: url("./images/#{$i}@3x.jpg");
+    }
+  }
+}
+

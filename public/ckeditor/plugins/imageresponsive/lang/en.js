@@ -1,0 +1,1 @@
+﻿CKEDITOR.plugins.setLang("imageresponsive","en",{sizes:"Sizes (responsive)",srcset:"Sourceset (responsive)"});

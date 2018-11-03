@@ -1,0 +1,158 @@
+/**
+ * Create by Mora at 2017-12-20 15:30
+ * All right reserved
+ */
+
+.pArtClass {
+  color: #333;
+
+  .box {
+    padding: 30px 20px 0;
+  }
+
+  h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    height: 24px;
+    line-height: 24px;
+    margin-bottom: 20px;
+    border-left: 8px solid #1DBFB2;
+    margin-left: -20px;
+    padding-left: 12px;
+  }
+
+  p {
+    line-height: 24px;
+    margin-bottom: 1em;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  .peoplesBox {
+    .wSlider {
+      margin: 0 -20px;
+    }
+  }
+
+  .people {
+    padding-right: 20px;
+    border-right: 1px dashed #D8D8D8;
+    img {
+      margin-right: 20px;
+    }
+    .desc {
+      margin-top: 30px;
+    }
+    .name {
+      font-size: 28px;
+      font-weight: bold;
+      color: #1DBFB2;
+      line-height: 54px;
+    }
+    .title {
+      color: #333;
+      font-size: 16px;
+      line-height: 30px;
+      font-weight: bold;
+    }
+  }
+
+  .timelineBox {
+    .desc {
+      margin-bottom: 20px;
+    }
+
+    .timeline {
+      background: #F5F5F5;
+      border-radius: 4px;
+      margin-bottom: 15px;
+      padding: 15px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      p {
+        margin: 0;
+      }
+      h3 {
+        margin-top: 10px;
+        font-size: 18px;
+        font-weight: bold;
+      }
+      time {
+        font-size: 12px;
+        font-weight: bold;
+        color: #999;
+      }
+      label, .n {
+        font-weight: bold;
+        font-family: "pfr";
+      }
+      .other {
+        margin-top: 20px;
+        color: #999;
+        line-height: 25px;
+      }
+    }
+  }
+
+  .qaBox {
+    .question {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 20px;
+
+      .line {
+        display: inline-block;
+        background: #F8E71C;
+      }
+    }
+    .answer {
+      margin-bottom: 30px;
+    }
+  }
+
+  .foot {
+    font-weight: bold;
+    .img {
+      padding: 0 20px 20px;
+    }
+
+    .btn {
+      color: white;
+      background: #1DBFB2;
+      display: block;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      font-size: 16px;
+      width: 104px;
+    }
+
+    .text {
+      line-height: 49px;
+      height: 49px;
+      margin-top: 1px;
+      padding-left: 20px;
+      color: #9B9B9B;
+      background: #FFFFFF;
+      box-shadow: 0 -1px 0 0 rgba(230, 230, 230, .5);
+    }
+  }
+}
+
+.modal {
+  padding: 40px 20px 20px;
+  color: #333;
+  line-height: 25px;
+  text-align: center;
+
+  .btn {
+    color: #1DBFB2;
+    display: block;
+    margin-top: 28px;
+    font-weight: bold;
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,19 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true
+  },
+
+  "dot-template-vscode.debug": false,
+
+  "mora-vscode.globalStyleFiles": [
+    "${rootPath}/src/icon/index.scss",
+    "${rootPath}/src/styles/index.scss",
+    "${npmPath}/mora-common/style/base/common.scss"
+  ],
+  "typescript.tsdk": "node_modules/typescript/lib"
+}

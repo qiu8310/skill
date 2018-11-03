@@ -1,0 +1,46 @@
+/**
+ * Create by Mora at 2017-10-17 16:30
+ * All right reserved
+ */
+
+.wCareerCard {
+  &.noLink {
+    pointer-events: none;
+  }
+
+  position: relative;
+  display: block;
+  border-radius: 14px;
+  overflow: hidden;
+  text-align: left;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, .14);
+
+  .bottom {
+    padding: 15px 20px;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 90px;
+    background: rgba(0, 0, 0, .7);
+  }
+  .nameZh {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .nameEn {
+    font-size: 16px;
+  }
+}
+
+.wCareerCard-hero {
+  border-radius: 0;
+  box-shadow: none;
+  .bottom {
+    height: 103px;
+    padding: 20px;
+  }
+  .nameZh { font-size: 28px; }
+  .nameEn { font-size: 18px; }
+}

@@ -1,0 +1,64 @@
+/**
+ * Create by Mora at 2017-11-13 12:16
+ * All right reserved
+ */
+
+.wCompanyItem {
+  float: left;
+  padding-bottom: 15px;
+
+  margin-bottom: 15px;
+  &:nth-child(2n + 1) {
+    margin-left: 20px;
+    margin-right: 15px;
+  }
+
+  width: 160px;
+  height: 184px;
+  border-radius: 4px;
+  background: white;
+
+  h3 {
+    padding: 10px 14px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  p {
+    font-size: 12px;
+    padding: 0 14px;
+  }
+}
+
+.wCompanyItem-modal {
+  padding: 30px 15px 15px;
+  position: relative;
+
+  .close {
+    width: 54px;
+    height: 54px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url("./images/close@3x.png") no-repeat center center;
+    background-size: 24px auto;
+  }
+
+  em {
+    display: none;
+  }
+
+  img {
+    width: 160px;
+    height: 90px;
+  }
+
+  p {
+    margin: 10px 0 20px;
+  }
+
+  a {
+    display: block;
+    color: #16BCD9;
+    line-height: 32px;
+  }
+}

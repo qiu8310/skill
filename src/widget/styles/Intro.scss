@@ -1,0 +1,79 @@
+/**
+ * Create by Mora at 2017-10-24 10:59
+ * All right reserved
+ */
+
+.wIntro {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  .wIntroTransition {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    animation-duration: 1s;
+  }
+  .wIntroItem {
+    position: absolute;
+  }
+}
+
+.wIntro-fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  .wIntroTransition {
+    position: absolute;
+  }
+}
+
+.wIntro-dots {
+  position: absolute;
+  left: 50%;
+  bottom: 35px;
+  transform: translateX(-50%);
+  display: flex;
+}
+.wIntro-dot {
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: #D8D8D8;
+  margin-right: 25px;
+  border-radius: 50%;
+
+  &:last-child {
+    margin-right: 0;
+  }
+  &.active {
+    background: #16BCD9;
+  }
+}
+
+.wIntro-next {
+  .introEnter { animation-name: moveFromRight; }
+  .introLeave { animation-name: moveToLeft; }
+}
+.wIntro-prev {
+  .introEnter { animation-name: moveFromLeft; }
+  .introLeave { animation-name: moveToRight; }
+}
+
+@keyframes moveToLeft {
+  from { }
+  to { transform: translateX(-100%); }
+}
+@keyframes moveToRight {
+  from { }
+  to { transform: translateX(100%); }
+}
+@keyframes moveFromLeft {
+  from { transform: translateX(-100%); }
+}
+@keyframes moveFromRight {
+  from { transform: translateX(100%); }
+}

@@ -1,0 +1,37 @@
+/**
+ * Create by Mora at 2017-11-09 13:27
+ * All right reserved
+ */
+
+.pHomeV3 {
+  .head {
+    padding: 20px;
+
+    .name {
+      display: block;
+      font-size: 24px;
+      color: black;
+      line-height: 34px;
+      height: 34px;
+      font-weight: bold;
+    }
+
+    .search {
+      display: block;
+      height: 34px;
+      width: 60px;
+      background: url("./images/search@3x.png") no-repeat right center;
+      background-size: 22px 22px;
+    }
+  }
+
+  .career {
+    display: block;
+    .avatar {
+      border-radius: 4px;
+    }
+    .name {
+      margin-top: 14px;
+    }
+  }
+}

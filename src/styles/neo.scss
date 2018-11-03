@@ -1,0 +1,41 @@
+@import 'mora-common/style/mixin/responsive';
+
+#root, .gContainer {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  @include from(540px) {
+    width: 540px;
+  }
+}
+
+.learn {
+  display: block;
+  margin: 1.5em 0;
+  padding: 0 1em;
+  color: #333;
+  border-left: .25em solid #278CF1;
+}
+
+.note {
+  margin-top: .4em;
+  color: #999;
+}
+
+a {
+  color: #278CF1;
+}
+
+button {
+  outline: none;
+  box-shadow: none;
+  border: none;
+  background: #278CF1;
+  color: white;
+  padding: 6px 18px;
+  display: block;
+  border-radius: 2px;
+}
+.ct {
+  margin: 1em auto 0;
+}

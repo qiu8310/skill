@@ -1,0 +1,63 @@
+/**
+ * Create by Mora at 2017-12-01 14:51
+ * All right reserved
+ */
+.bodyApply {
+  background: #2C83C7;
+}
+.pApply {
+  .gMarkdown {
+    padding: 0;
+  }
+  .wrap {
+    padding: 20px 15px;
+  }
+  .level-1 {
+    border-radius: 8px;
+    margin: auto;
+    background: #fff;
+    box-shadow: 0 0 3px rgba(0, 0, 0, .3);
+
+    p {
+      margin: 10px 0;
+    }
+  }
+
+  .level-2-1 {
+    text-align: center;
+    padding: 10px 10px 20px;
+
+    h3 {
+      font-size: 16px;
+      margin: 10px 0;
+    }
+
+    blockquote {
+      margin: 0 -10px;
+      border: 0;
+      padding: 10px 0;
+      background: #FDF8F6;
+    }
+  }
+
+  .level-2-2 {
+    background: #fafafa;
+    color: #b5b7ba;
+    font-size: 12px;
+    text-align: center;
+    padding: 0 10px 30px;
+
+    img {
+      margin-top: 20px;
+    }
+
+    h2 {
+      color: #333;
+      padding: 15px;
+      border-bottom: 1.5px solid #e8e8e8;
+      margin: 0 -10px;
+      font-weight: 600;
+      font-size: 14px;
+    }
+  }
+}

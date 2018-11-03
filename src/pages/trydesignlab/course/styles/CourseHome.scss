@@ -1,0 +1,183 @@
+/**
+ * Create by Mora at 2017-11-27 12:00
+ * All right reserved
+ */
+
+.bodyCourseHome {
+  background: $activeColor;
+}
+.pCourseHome {
+  /* ===== top ===== */
+  .top {
+    padding: 30px 15px;
+    background: white;
+  }
+  .welcome {
+    margin-top: 15px;
+    color: #b5b7ba;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .courseName {
+    font-weight: bold;
+    font-size: 26px;
+    margin: 5px 0 8px;
+  }
+  .courseDesc {
+    margin-bottom: 15px;
+    line-height: 1.4;
+  }
+
+  .progress {
+    width: 80px;
+    margin: 0 auto;
+    border-top: 1px solid #ebebeb;
+    overflow: hidden;
+  }
+  h3 {
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: .1em;
+    text-align: center;
+    margin: 20px 0;
+  }
+  .value {
+    font-weight: bold;
+    width: 54px;
+    margin: 0 auto;
+    font-size: 18px;
+    text-align: center;
+  }
+  /* ===== top end ===== */
+
+  .bar {
+    background: #1a2930;
+    color: white;
+    padding: 12px 0;
+  }
+
+  /* ===== bottom ===== */
+  .bottom {
+    padding: 15px;
+  }
+
+  .weeks {
+    position: relative;
+    padding: 40px 0 20px;
+  }
+
+  .spine {
+    position: absolute;
+    width: 4px;
+    left: 35px;
+    height: auto;
+    background: #1a2830;
+    border: 0;
+    top: 0;
+    opacity: .8;
+    z-index: 10;
+    display: block;
+    bottom: 50px;
+  }
+
+  .week {
+    position: relative;
+    z-index: 100;
+  }
+
+  .weekLabel {
+    display: inline-block;
+    color: #fff;
+    margin: 30px 0;
+    padding: 10px;
+    border-radius: 4px;
+    background: #1a1f22;
+    min-width: 100px;
+    opacity: .8;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .unit {
+    background: #fff;
+    margin: 0 auto 50px;
+    padding: 30px 20px 30px 10px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
+    box-shadow: 0 4px 0 rgba(0, 0, 0, .2);
+    &.disabled {
+      pointer-events: none;
+    }
+
+    .left {
+      width: 94px;
+      margin-right: 10px;
+    }
+
+    h4 {
+      line-height: 1;
+      color: #f15b2a;
+      font-weight: 800;
+    }
+    h2 {
+      font-size: 18px;
+      margin: 10px 0;
+      font-weight: 600;
+      line-height: 1;
+    }
+  }
+
+  .infos {
+    border: 2px solid #ebebeb;
+    width: 100%;
+    margin: 10px 0 15px;
+    border-radius: 4px;
+    display: table;
+    table-layout: fixed;
+    border-collapse: separate;
+  }
+  .info {
+    display: table-cell;
+    border-right: 2px solid #ebebeb;
+    text-align: center;
+    font-size: 11px;
+    color: #666;
+    height: 28px;
+    line-height: 28px;
+    background-repeat: no-repeat;
+    font-weight: 600;
+    background-position: 5px 6px;
+    &:last-child {
+      border-right: none;
+    }
+  }
+
+  .mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .75);
+  }
+
+  .locked {
+    .icon {
+      margin: 80px auto 0;
+    }
+  }
+
+  .completed {
+    .icon {
+      margin: 45px auto 0;
+    }
+    p {
+      text-align: center;
+      color: white;
+      margin-top: 10px;
+      font-size: 18px;
+    }
+  }
+  /* ===== bottom end ===== */
+}

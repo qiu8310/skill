@@ -1,0 +1,75 @@
+/**
+ * Create by Mora at 2017-11-09 15:18
+ * All right reserved
+ */
+.pStartV3-nav {
+  padding: 0 30px;
+  background: white;
+  .active {
+    pointer-events: none;
+  }
+  .link {
+    height: 49px;
+    width: 84px;
+    background-position: center center;
+    background-size: 23px 23px;
+    background-repeat: no-repeat;
+  }
+  .home {
+    background-image: url("./images/home@3x.png");
+    background-size: 24px 25px;
+
+    &.active {
+      background-image: url("./images/home-active@3x.png");
+    }
+  }
+  .explore {
+    background-image: url("./images/explore@3x.png");
+
+    &.active {
+      background-image: url("./images/explore-active@3x.png");
+    }
+  }
+  .user {
+    background-image: url("./images/user@3x.png");
+
+    &.active {
+      background-image: url("./images/user-active@3x.png");
+    }
+  }
+}
+
+.pStartV3-home {
+  .top {
+    font-size: 21px;
+    font-weight: bold;
+    text-align: center;
+    margin: 60px 0 90px;
+  }
+
+  .careers {
+    padding: 0 14px;
+  }
+
+  .career {
+    display: inline-block;
+    height: 32px;
+    line-height: 32px;
+    border-radius: 16px;
+    padding: 0 10px;
+    color: $activeColor;
+    border: 1px solid $activeColor;
+    margin: 0 6px 15px;
+    min-width: 100px;
+    text-align: center;
+
+    &.active {
+      background: $activeColor;
+      color: white;
+    }
+  }
+
+  .btn {
+    border-radius: 4px;
+  }
+}

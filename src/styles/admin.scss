@@ -1,0 +1,4 @@
+@import 'mora-common/style/base/common';
+@import '../../plugin/ckeditor/contents';
+
+.gDisabled, [disabled] { pointer-events: none; }

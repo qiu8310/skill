@@ -1,0 +1,125 @@
+/**
+ * Create by Mora at 2017-10-18 10:56
+ * All right reserved
+ */
+
+$headHeight: 70px;
+$menuWidth: 250px;
+
+.wMenu {
+  .wCareerCard {
+    margin: 0 auto 25px;
+  }
+
+  .menuHead {
+    .wrap {
+      height: $headHeight;
+      line-height: $headHeight;
+    }
+
+    .imenu {
+      width: 40px;
+      background: url("./images/menu@3x.png") no-repeat right center;
+      background-size: 16px 15px;
+    }
+
+    .isearch {
+      width: 46px;
+      background: url("./images/search@3x.png") no-repeat left center;
+      background-size: 21px 22px;
+    }
+
+    .text span {
+      display: inline-block;
+      height: 100%;
+      line-height: $headHeight;
+    }
+    .title {
+      margin-left: 16px;
+      font-size: 24px;
+      font-weight: bold;
+      color: black;
+    }
+    .count {
+      font-size: 16px;
+      margin-left: 6px;
+    }
+  }
+
+  .menuView {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .menuBody {
+    margin-top: 1px;
+  }
+
+  .menuContent {
+    overflow: hidden;
+    width: $menuWidth;
+    background: white;
+    top: $headHeight;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 10;
+    transform: translate(-$menuWidth, 0, 0);
+
+    .menuitems {
+      overflow: hidden;
+      margin-left: 24px;
+    }
+    .menuitem {
+      padding-left: 30px;
+      line-height: 80px;
+      font-size: 21px;
+      transform: translate(-100%, 0, 0);
+    }
+
+    .bottom {
+      position: absolute;
+      bottom: 36px;
+      width: 200px;
+      left: 10px;
+    }
+    .about {
+      padding-left: 24px;
+      background: url("./images/about@3x.png") no-repeat left center;
+      background-size: 16px 16px;
+    }
+    .setting {
+      padding-left: 25px;
+      background: url("./images/setting@3x.png") no-repeat left center;
+      background-size: 18px 18px;
+    }
+  }
+}
+
+.wMenu-opened {
+  .menuTransition {
+    transition: transform .3s cubic-bezier(.175, .885, .32, 1.275);
+  }
+  .menuHead {
+    .imenu {
+      background: url("./images/menu-close@3x.png") no-repeat right center;
+      background-size: 16px 16px;
+    }
+  }
+  .menuBody {
+    transform: translate($menuWidth + 20px, 0, 0);
+  }
+
+  .menuContent {
+    transform: translate(0, 0, 0);
+
+    .menuitem {
+      transform: translate(0, 0, 0);
+    }
+    .menuitem:nth-child(1) { transition-delay: .07s; }
+    .menuitem:nth-child(2) { transition-delay: .14s; }
+    .menuitem:nth-child(3) { transition-delay: .21s; }
+    .menuitem:nth-child(4) { transition-delay: .28s; }
+    .menuitem:nth-child(5) { transition-delay: .35s; }
+  }
+}

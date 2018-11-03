@@ -1,0 +1,155 @@
+@import 'mora-common/style/base/reset';
+@import 'mora-common/style/base/common';
+
+.gTab {
+  .wTabNavs {
+    padding: 9px 0;
+    background: #FFFFFF;
+    border-bottom: 1px solid #EDEEEF;
+  }
+  .wTabNavs {
+    display: flex;
+  }
+  .wTabNav {
+    height: 30px;
+    line-height: 30px;
+    width: 50%;
+    text-align: center;
+    color: #999;
+    &.active {
+      color: #008FF7;
+    }
+    border-right: 1px solid #E6E6E6;
+    &:last-child {
+      border-right: 0;
+    }
+  }
+}
+.gNext {
+  display: block;
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: #999;
+  margin: 20px auto;
+}
+.gInput {
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  -webkit-appearance: none;
+
+  &.focused {
+    border-color: #FF3824;
+    box-shadow: 0 0 0 2px rgba(253, 54, 36, .7);
+  }
+}
+
+.pHome {
+  overflow: hidden;
+  background: black;
+  min-height: 100vh;
+  padding: 0 20px;
+  img {
+    margin: 42px auto 60px;
+  }
+
+  .t1 {
+    font-size: 18px;
+    color: white;
+    margin-bottom: 1.5em;
+  }
+
+  .t2 {
+    font-size: 14px;
+    color: #9B9B9B;
+  }
+
+  .apply {
+    display: block;
+    border: 3px solid #F8E71C;
+    color: #F8E71C;
+    font-size: 16px;
+    height: 44px;
+    line-height: 38px;
+    text-align: center;
+  }
+}
+
+.pQuestion {
+  .title, .description, .question {
+    padding: 0 25px;
+  }
+  .title {
+    margin: 20px 0 4px;
+  }
+  .description {
+    margin-bottom: 20px;
+  }
+  .tabTip {
+    padding: 0 25px;
+    margin: 10px 0;
+    color: #AAA;
+  }
+  .questionTitle {
+    font-size: 1.3em;
+    margin: 20px 0 0;
+  }
+  .questionTip {
+    margin: 4px 0 6px;
+    color: #AAA;
+    line-height: 15px;
+    font-size: 12px;
+  }
+  .required {
+    color: #FF3824;
+  }
+  .questionInput {
+    resize: none;
+    outline: none;
+    width: 100%;
+    padding: 4px;
+    height: 80px;
+    line-height: 18px;
+    font-size: 14px;
+    border: 1px solid #C3C9D0;
+    border-radius: 4px;
+  }
+}
+
+.pUser {
+  padding: 80px 25px 0;
+  .label {
+    display: block;
+  }
+
+  .input {
+    display: block;
+    width: 100%;
+    height: 34px;
+    line-height: 32px;
+    margin: 4px 0 20px;
+    border: 1px solid #E6E6E6;
+    outline: none;
+    padding: 0 10px;
+  }
+}
+
+.pFinish {
+  padding: 20px;
+  text-align: center;
+
+  .title {
+    font-size: 16px;
+    margin: 10px 0 5px;
+  }
+
+  .feedback {
+    margin-top: 15px;
+  }
+
+  .notice {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 40px;
+  }
+}

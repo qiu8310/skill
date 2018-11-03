@@ -1,0 +1,20 @@
+/**
+ * Create by $user at $datetime
+ * All right reserved
+ */
+
+//#region import
+import {React, PageComponent, Page, inject} from 'pages/trydesignlab/base/'
+//#endregion
+
+@inject('app')
+export class $ModuleName extends PageComponent<any, any> {
+  render() {
+    let {rp} = this
+    return (
+      <Page name='${ModuleName}' title={rp.${ModuleName}.title}>
+        $ModuleName
+      </Page>
+    )
+  }
+}

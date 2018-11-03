@@ -1,0 +1,126 @@
+/**
+ * Create by Mora at 2017-12-18 16:54
+ * All right reserved
+ */
+
+.pAcademyActivity {
+  $light: #1DBFB2;
+
+  .seeall {
+    display: block;
+    color: #439ce4;
+    line-height: 50px;
+    text-align: center;
+  }
+
+  .category {
+    padding: 0 20px;
+  }
+
+  .activity {
+    padding: 20px 0;
+    border-bottom: 1px solid #D8D8D8;
+    border-bottom-width: .5px;
+  }
+  h3 {
+    font-size: 20px;
+    color: #333;
+    padding: 1.5em 0 .8em;
+    border-bottom: 1px solid #D8D8D8;
+    border-bottom-width: .5px;
+  }
+  .categoryLabel {
+    font-size: 20px;
+    color: #333;
+    display: inline-block;
+    height: 40px;
+    padding: 0 20px;
+    margin-left: -20px;
+    background: $activeColor;
+    line-height: 40px;
+  }
+  .filter {
+    color: $gray;
+    font-size: .8em;
+    line-height: 2em;
+  }
+
+  .tag {
+    display: inline-block;
+    padding: 0 8px;
+    height: 18px;
+    line-height: 19px;
+    border-radius: 9px;
+    font-size: 12px;
+    color: #333;
+    background: #F8E71C;
+  }
+
+  .days {
+    margin-left: 10px;
+    text-align: center;
+    width: 64px;
+    height: 74px;
+    background: #F5F5F5;
+    box-shadow: 0 2px 0 0 rgba(0, 0, 0, .13);
+  }
+
+  .d1 {
+    background: $light;
+    color: white;
+    font-size: 12px;
+    height: 20px;
+    line-height: 20px;
+  }
+
+  .d2 {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 30px;
+    color: $light;
+  }
+
+  .d3 {
+    font-size: 12px;
+    transform: scale(.82);
+    transform-origin: center center;
+    color: #9B9B9B;
+  }
+
+  .info {
+    min-height: 74px;
+    color: #4A4A4A;
+    p svg {
+      margin-right: 5px;
+    }
+  }
+  h4 {
+    font-size: 16px;
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  .desc {
+    line-height: 18px;
+    margin: 2px 0 8px;
+  }
+  .address, .time {
+    font-size: 12px;
+    margin: 2px 0;
+    color: #AAA;
+    line-height: 15px;
+  }
+
+  .booked {
+    margin-top: 8px;
+    .bar {
+      margin: 3px 0;
+    }
+    .v {
+      margin-left: 15px;
+      font-size: 12px;
+      line-height: 16px;
+      color: #9B9B9B;
+    }
+  }
+}

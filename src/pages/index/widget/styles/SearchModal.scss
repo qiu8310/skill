@@ -1,0 +1,82 @@
+/**
+ * Create by Mora at 2017-10-19 15:14
+ * All right reserved
+ */
+
+.wSearchModal {
+  position: fixed;
+  z-index: 200;
+  background: rgba(0, 0, 0, .9);
+  color: white;
+
+  .form {
+    position: relative;
+    display: block;
+    width: 336px;
+    height: 38px;
+    margin: 15px auto 0;
+    border-bottom: 1px solid #979797;
+    border-width: .5px;
+  }
+
+  .input {
+    display: block;
+    width: 100%;
+    outline: none;
+    border: 0;
+    padding: 9px 36px 7px;
+    height: 36px;
+    line-height: 20px;
+    font-size: 14px;
+    background: transparent;
+    color: white;
+    padding-left: 10px;
+  }
+
+  .clear {
+    display: block;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background: #6D6F6F;
+    &::after, &::before {
+      position: absolute;
+      margin: auto;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      content: "";
+      width: 12px;
+      height: 1px;
+      background: #2E3032;
+    }
+    &::after { transform: rotate(45deg); }
+    &::before { transform: rotate(-45deg); }
+  }
+
+  .careers {
+    margin-top: 15px;
+    padding: 0 30px;
+    .career {
+      display: block;
+      font-size: 14px;
+      line-height: 38px;
+      height: 38px;
+    }
+  }
+
+  .nocareers {
+    .i {
+      margin: 50px auto 15px;
+      display: block;
+      width: 100%;
+      height: 34px;
+      background: url("./images/warn@3x.png") no-repeat center center;
+      background-size: 34px 34px;
+    }
+  }
+}
+

@@ -1,0 +1,17 @@
+/**
+ * Create by $user at $datetime
+ * All right reserved
+ */
+
+import {React, PageComponent, Page, page} from '../base'
+
+@page
+export class $ModuleName extends PageComponent<any, any> {
+  render() {
+    return (
+      <Page name='${ModuleName}' title={this.app.rp.${ModuleName}.title}>
+        $ModuleName
+      </Page>
+    )
+  }
+}

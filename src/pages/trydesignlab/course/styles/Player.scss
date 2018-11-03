@@ -1,0 +1,93 @@
+/**
+ * Create by Mora at 2017-11-29 15:14
+ * All right reserved
+ */
+
+.wPlayer {
+  .nav {
+    position: relative;
+    color: #B1B3B5;
+    padding: 10px;
+    line-height: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+
+    background: #EBEBEB;
+    border-bottom: 1px solid #ddd;
+  }
+  .back {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-size: 14px;
+    padding-left: 20px;
+    svg {
+      display: block;
+      position: absolute;
+      width: 19px;
+      height: 19px;
+      left: 0;
+      top: 0;
+      fill: #CF7152;
+    }
+  }
+  .toUnit {
+    color: #a2a2a2;
+    background: 0;
+    border: 2px solid #a2a2a2;
+    height: 40px;
+    font-size: 14px;
+    line-height: 37px;
+    display: block;
+    text-align: center;
+    border-radius: 20px;
+    width: 100px;
+    margin: 30px auto;
+  }
+
+  .bottom {
+    border-top: 1px solid #ddd;
+  }
+  .controls {
+    width: 100px;
+    padding: 8px 0;
+    margin: 0 auto;
+    .ctrl {
+      display: block;
+      width: 40px;
+      height: 24px;
+      background: #F05E36;
+      fill: white;
+      border-radius: 2px;
+      text-align: center;
+      line-height: 24px;
+    }
+
+    svg {
+      display: block;
+      width: 16px;
+      height: 16px;
+      margin: 4px auto;
+    }
+    .disabled {
+      background: #F9BFAF;
+      pointer-events: none;
+    }
+  }
+
+  .progress {
+    height: 30px;
+    padding: 8px 30px;
+    background: #EBEBEB;
+
+    .number {
+      margin-top: -14px;
+      line-height: 15px;
+      display: block;
+      text-align: center;
+      color: white;
+      font-size: 12px;
+    }
+  }
+}

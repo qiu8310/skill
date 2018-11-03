@@ -1,0 +1,113 @@
+/**
+ * Create by Mora at 2017-12-18 20:13
+ * All right reserved
+ */
+.bodyAcademyBBS {
+  background: #F8F8F8;
+  min-height: 100vh;
+}
+.pAcademyBBS {
+
+  .gTab {
+    .wTabNavs {
+      padding: 0;
+      background: $activeColor;
+    }
+    .wTabNav {
+      line-height: 16px;
+      height: auto;
+      color: #333;
+      border-right: 0;
+
+      span {
+        padding: 16px 0 8px;
+        display: inline-block;
+        border-bottom: 2px solid transparent;
+      }
+
+      &.active {
+        span {
+          border-bottom-color: #333;
+        }
+      }
+    }
+    // color: $activeColor;
+  }
+
+  .weui-search-bar {
+    background: $activeColor;
+  }
+  .t1SearchBar {
+    .weui-search-bar__box {
+      visibility: hidden;
+    }
+    .weui-search-bar__label {
+      display: none;
+    }
+    .ask {
+      font-weight: bold;
+      color: #439CE4;
+      width: 64px;
+      text-align: center;
+      display: block;
+      line-height: 44px;
+      background: $activeColor;
+    }
+  }
+
+  .questionIcon {
+    display: block;
+    width: 18px;
+    height: 18px;
+    border-radius: 100%;
+    background: #D8D8D8;
+  }
+  .questionUser {
+    display: block;
+    position: relative;
+    line-height: 18px;
+    padding-left: 6px;
+    font-size: 12px;
+    color: #999;
+    margin-bottom: 6px;
+  }
+
+  .questionDesc {
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+
+  .questionImage {
+    display: block;
+    margin: 10px 0;
+    max-width: 100%;
+  }
+
+  .questionInfo {
+    span {
+      margin-right: 12px;
+    }
+  }
+
+  .groupDesc {
+    span {
+      margin-right: 12px;
+    }
+    em {
+      font-style: normal;
+      margin-right: 4px;
+      color: #333;
+    }
+  }
+
+  .users, .groupTip {
+    padding: 40px 20px 30px;
+    color: #aaa;
+    font-size: 14px;
+    text-align: center;
+
+    p {
+      margin-bottom: 10px;
+    }
+  }
+}

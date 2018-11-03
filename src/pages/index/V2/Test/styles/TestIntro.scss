@@ -1,0 +1,45 @@
+/**
+ * Create by Mora at 2017-10-12 11:20
+ * All right reserved
+ */
+
+.pTestIntro {
+  .topText {
+    margin-top: 35px;
+  }
+
+  .characters {
+    padding: 0 3px 2px;
+  }
+
+  .character {
+    width: 110px;
+    float: left;
+    margin: 30px 5px 0;
+
+    &.active {
+      color: $activeColor;
+    }
+  }
+
+  .avatar {
+    width: 102px;
+    height: 102px;
+    border: 2px solid transparent;
+  }
+
+  .active .avatar {
+    border-color: $activeColor;
+  }
+
+  .type {
+    margin: 12px 0 2px;
+  }
+  .desc {
+    font-size: 11px;
+  }
+
+  .btn {
+    border-radius: 24px;
+  }
+}

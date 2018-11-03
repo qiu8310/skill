@@ -1,0 +1,19 @@
+/**
+ * Create by $user at $datetime
+ * All right reserved
+ */
+
+//#region import
+import {React, PageComponent, Page, page} from 'mobx/${Product}App'
+//#endregion
+
+@page
+export class $ModuleName extends PageComponent {
+  render() {
+    return (
+      <Page name='${ModuleName}'>
+        $ModuleName
+      </Page>
+    )
+  }
+}

@@ -1,0 +1,114 @@
+/**
+ * Create by Mora at 2017-11-09 16:11
+ * All right reserved
+ */
+
+.bodyCareerV3 {
+  background: #F1F1F1;
+}
+.pCareerV3 {
+  .top1 { background-image: linear-gradient(-45deg, #399AFF 0%, #245CED 100%); }
+  .top2 { background-image: linear-gradient(-45deg, #36C671 0%, #27AD61 100%); }
+  .top3 { background-image: linear-gradient(-45deg, #E56379 0%, #DE4C43 100%); }
+  .top4 { background-image: linear-gradient(-45deg, #F1A324 0%, #E2871B 100%); }
+  .top5 { background-image: linear-gradient(-45deg, #EC63B6 0%, #A92BCE 100%); }
+
+  .top {
+    padding: 20px 20px 0;
+    color: white;
+
+    h1 {
+      font-size: 24px;
+      font-weight: bold;
+      line-height: 33px;
+    }
+    h2 {
+      font-size: 16px;
+      line-height: 22px;
+    }
+
+    .links {
+      padding: 25px 8px 50px;
+    }
+
+    .link {
+      display: block;
+      text-align: center;
+    }
+
+    .logo {
+      position: relative;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+    .bg {
+      opacity: .1;
+      background: #FFFFFF;
+    }
+    .icon {
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 32px 32px;
+    }
+    .label {
+      font-size: 12px;
+      margin-top: 10px;
+    }
+
+    .icon1 { background-image: url("./images/career-detail@3x.png"); }
+    .icon2 { background-image: url("./images/career-data@3x.png"); }
+    .icon3 { background-image: url("./images/career-skill@3x.png"); }
+    .icon4 { background-image: url("./images/career-system@3x.png"); }
+  }
+
+  .video {
+    width: 335px;
+    height: 188px;
+    background: white;
+    position: relative;
+    top: -20px;
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 0 auto;
+    background-size: cover;
+
+    .nt {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      line-height: 49px;
+      padding: 0 20px;
+      color: white;
+    }
+
+    .time {
+      font-size: 12px;
+    }
+
+    .mask {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background: rgba(0, 0, 0, .7);
+    }
+
+    .play {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0%;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      width: 55px;
+      height: 55px;
+      background: url("./images/play@3x.png") no-repeat;
+      background-size: 55px 55px;
+    }
+  }
+}

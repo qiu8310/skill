@@ -1,0 +1,102 @@
+@import 'mora-common/style/base/reset';
+@import 'mora-common/style/base/common';
+@import '../../plugin/ckeditor/contents';
+
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  line-height: 1.5;
+}
+
+#root, .gContainer {
+  position: relative;
+  width: 375px;
+  margin: 0 auto;
+}
+
+.gOverHide { overflow: hidden; }
+
+.gGap {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.gDisabled, [disabled] { pointer-events: none; }
+
+// // paragraph
+// .normalParagraph { line-height: 22px; letter-spacing: 1.5px; text-align: justify; }
+// .narrowParagraph { line-height: 20px; letter-spacing: .5px; text-align: justify; }
+
+.gJustify { text-align: justify; }
+.gTitle14 { font-size: 14px; color: #333; }
+.gTitle16 { font-size: 16px; color: #333; }
+.gTitle18 { font-size: 18px; color: #000; }
+.gGray12 { color: $grayColor; font-weight: normal; font-size: 12px; }
+.gGray14 { color: $grayColor; font-weight: normal; font-size: 14px; }
+.gLight12 { color: $lightColor; font-weight: normal; font-size: 12px; }
+.gLight14 { color: $lightColor; font-weight: normal; font-size: 14px; }
+.gBold { font-weight: bold; }
+.gBlack { color: #000; }
+.gWhite { color: white; }
+
+.gShadow { box-shadow: 0 3px 6px 0 rgba(0, 0, 0, .1); }
+.gCorner { border-radius: 2px; }
+
+.gTab {
+  .wTabNavs {
+    padding: 9px 0;
+    background: #FFFFFF;
+    border-bottom: 1px solid #EDEEEF;
+  }
+  .wTabNavs {
+    display: flex;
+  }
+  .wTabNav {
+    height: 30px;
+    line-height: 30px;
+    width: 50%;
+    text-align: center;
+    color: #999;
+    &.active {
+      color: #008FF7;
+    }
+    &:first-child {
+      border-right: 1px solid #E6E6E6;
+    }
+  }
+}
+
+.gMarkdown {
+  padding: 0 20px;
+  blockquote {
+    margin: 0;
+    padding: 0 1em;
+    color: #6a737d;
+    border-left: .25em solid #dfe2e5;
+  }
+  h1 {
+    font-size: 21px;
+    color: black;
+    margin: 21px 0 24px;
+    font-weight: bold;
+  }
+
+  h2 {
+    font-size: 14px;
+    color: black;
+    font-weight: bold;
+    margin: 20px 0;
+  }
+
+  p {
+    line-height: 22px;
+    letter-spacing: 1px;
+    margin: 20px 0;
+  }
+
+  img {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": [
+      "dom",
+      "es5",
+      "scripthost",
+      "es2015" // for antd
+    ],
+    "noLib": false,
+    "module": "commonjs",
+    "declaration": false,
+    "noImplicitAny": false,
+    "removeComments": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "noUnusedLocals": true,
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "jsx": "react",
+    "baseUrl": "src"
+  },
+  "include": [
+    ".dtpl/dtpl.ts",
+    "src",
+    "script.ts",
+    "typings.d.ts"
+  ],
+  "exclude": [
+  ]
+}

@@ -1,0 +1,40 @@
+/**
+ * Create by Mora at 2017-12-18 18:12
+ * All right reserved
+ */
+.bodyAcademyLibrary {
+  min-height: 100vh;
+}
+.pAcademyLibrary {
+  .weui-cells__title {
+    padding: 0 20px 0 0;
+    line-height: 40px;
+    margin: 20px 0;
+    .label {
+      padding: 0 20px;
+      font-size: 20px;
+      color: #333;
+      display: inline-block;
+      height: 40px;
+      background: $activeColor;
+    }
+    .more {
+      color: #439ce4;
+    }
+  }
+  .desc {
+    padding: 10px 15px;
+    color: #AAA;
+
+    a {
+      color: #6894D1;
+    }
+  }
+  .top {
+    margin-bottom: 15px;
+    color: #666;
+  }
+  .tip {
+    font-size: 12px;
+  }
+}

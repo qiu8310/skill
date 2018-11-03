@@ -1,0 +1,35 @@
+.bodyStartUp {
+  background: white;
+}
+
+.pStartUp {
+  .guide {
+    p {
+      text-align: center;
+      color: black;
+      font-size: 16px;
+      margin: 45px auto 50px;
+    }
+    img {
+      margin: 0 auto;
+    }
+  }
+
+  .test, .jump {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .test {
+    bottom: 96px;
+    border-radius: 24px;
+    margin: 24px auto 0;
+  }
+  .jump {
+    bottom: 56px;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+  }
+}

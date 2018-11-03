@@ -1,0 +1,18 @@
+{
+  "rootBackgroundColor": "white",
+  "rootFontFamily": "'proxima-nova', 'Gotham', 'Helvetica Neue', Helvetica, Arial, sans-serif",
+  "sansSerifFontFamily": "'proxima-nova', 'Gotham', 'Helvetica Neue', Helvetica, Arial, sans-serif",
+
+  "serifFontFamily": "'宋体', 'Songti SC Regular', 'Songti SC', 'Times New Roman', Times, serif",
+  "codeFontFamily": "Courier, 'Courier New', monospace",
+
+  "rootFontSize": 14,
+  "baseColor": "#333",
+  "placeholderColor": "#ccc",
+
+  "activeColor": "#24363F",
+  "blueColor": "#16BCD9",
+  "redColor": "#FF4A52",
+  "grayColor": "#999",
+  "lightColor": "#CCC"
+}

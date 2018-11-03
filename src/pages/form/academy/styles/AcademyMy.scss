@@ -1,0 +1,45 @@
+/**
+ * Create by Mora at 2017-12-21 14:22
+ * All right reserved
+ */
+
+.bodyAcademyMy {
+  background: #F8F8F8;
+  min-height: 100vh;
+}
+
+.pAcademyMy {
+  .weui-cell {
+    padding: 10px 20px;
+  }
+  .top {
+    height: 120px;
+    background: #F8E817;
+  }
+  .row {
+    height: 74px;
+    padding: 23px 20px;
+    font-size: 18px;
+
+    .name {
+      margin: 0 20px;
+      padding: 10px 0;
+      height: 44px;
+      display: block;
+      border-bottom: 1px solid #E1DA6E;
+    }
+    .zone {
+      height: 100%;
+      line-height: 80px;
+      svg {
+        color: #E1DA6E;
+      }
+    }
+  }
+  .avatar {
+    width: 74px;
+    height: 74px;
+    border-radius: 100%;
+    background-size: cover;
+  }
+}

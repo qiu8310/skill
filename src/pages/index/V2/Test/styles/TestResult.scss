@@ -1,0 +1,82 @@
+/**
+ * Create by Mora at 2017-10-12 16:28
+ * All right reserved
+ */
+
+.pTestResult {
+  .activeColor { color: $activeColor; }
+  hr {
+    margin: 0;
+    border-width: 0;
+    border-top: 1px solid #979797;
+  }
+
+  .top {
+    overflow: hidden;
+    background: $activeColor;
+
+    .text {
+      margin: 30px 0 26px;
+    }
+
+    .result {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .contrasts {
+      background: url("./images/triangle-27x15@3x.png") no-repeat center center;
+      background-size: 27px 15px;
+    }
+
+    .avatar {
+      margin: 13px 0 10px;
+    }
+    .name {
+      font-weight: bold;
+    }
+
+    .p {
+      text-align: left;
+      margin: 22px;
+    }
+    .tip {
+      text-align: center;
+      margin-top: 32px;
+    }
+  }
+
+  .chart {
+    overflow: hidden;
+    padding: 30px 20px 0;
+    margin-bottom: 36px;
+
+    .result {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .tip {
+      font-size: 12px;
+      padding: 0 20px;
+      margin: 10px 0 26px;
+      color: #7c7c7c;
+    }
+  }
+
+  .recommend {
+    .title {
+      font-size: 16px;
+      margin: 6px 0 20px;
+    }
+  }
+
+  .btns {
+    padding: 0 20px;
+    margin: 40px 0;
+  }
+  .btn {
+    border-radius: 18px;
+  }
+}

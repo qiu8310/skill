@@ -1,0 +1,176 @@
+/**
+ * Create by Mora at 2017-10-01 18:23
+ * All right reserved
+ */
+
+@import "mora-common/style/function/math";
+
+.wHamburger {
+  $pi: pi();
+  $activeColor: #1CBCD2;
+  $hamburgerWidth: 20px;
+  $hamburgerHeight: 2px;
+  $hamburgerSpacing: 6px;
+  $ballSize: 60px;
+  $menuItemCount: 6;
+  $openDistance: 80px;
+  $openingAngle: $pi * 2;
+
+  position: fixed;
+  width: $ballSize;
+  height: $ballSize;
+  bottom: $ballSize;
+  right: 10px;
+  font-size: 12px;
+
+  %ball {
+    cursor: pointer;
+    background: $activeColor;
+    border-radius: 100%;
+    width: $ballSize;
+    height: $ballSize;
+    // margin-left: -$ballSize / 2;
+    position: absolute;
+    // top: $ballSize / 4;
+    color: white;
+    text-align: center;
+    line-height: $ballSize;
+    transform: translate3d(0, 0, 0);
+    transition: transform ease-out 200ms;
+  }
+
+  .hbgrNav {
+    font-size: 30px;
+    @extend %ball;
+  }
+  .hbgrNavPrev {
+    transform: translate3d(0, -100%, 0) scale(.65);
+  }
+  .hbgrNavNext {
+    transform: translate3d(0, 100%, 0) scale(.65);
+  }
+  &.isOpen .hbgrNav {
+    transform: translate3d(0, 0, 0) scale(.65);
+  }
+
+  .hbgrButton {
+    @extend %ball;
+    z-index: 2;
+    transition-timing-function: cubic-bezier(.175, .885, .32, 1.275);
+    transition-duration: 400ms;
+    transform: scale(1.1, 1.1) translate3d(0, 0, 0);
+    &:hover {
+      transform: scale(1.2, 1.2) translate3d(0, 0, 0);
+    }
+  }
+  &.isOpen .hbgrButton {
+    transition-timing-function: linear;
+    transition-duration: 200ms;
+    transform: scale(.8, .8) translate3d(0, 0, 0);
+  }
+
+  .hbgr {
+    width: $hamburgerWidth;
+    height: $hamburgerHeight;
+    background: white;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -$hamburgerWidth / 2;
+    margin-top: -$hamburgerHeight / 2;
+    transition: transform 200ms;
+  }
+  .hbgr1 {
+    transform: translate3d(0, -$hamburgerSpacing, 0);
+  }
+  .hbgr2 {
+    transform: translate3d(0, 0, 0);
+  }
+  .hbgr3 {
+    transform: translate3d(0, $hamburgerSpacing, 0);
+  }
+
+  &.isOpen {
+    .hbgr1 {
+      transform: translate3d(0, 0, 0) rotate(45deg);
+    }
+    .hbgr2 {
+      transform: translate3d(0, 0, 0) scale(.1, 1);
+    }
+    .hbgr3 {
+      transform: translate3d(0, 0, 0) rotate(-45deg);
+    }
+  }
+
+  .hbgrMenu {
+    @extend %ball;
+    background: transparent;
+  }
+  .hbgrMenuItem {
+    @extend %ball;
+    // &:hover {
+    //   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .1);
+    //   background: whitesmoke;
+    //   color: $activeColor;
+    // }
+  }
+
+  &.isOpen .hbgrMenuItem {
+    @for $i from 1 through $menuItemCount + 1 {
+      &:nth-child(#{$i}) { transition-duration: 80ms + (90ms * $i); }
+    }
+  }
+
+  // &.isOpen.expandCircle .hbgrMenuItem {
+  //   transition-timing-function: cubic-bezier(.935, 0, .34, 1.33);
+  //   @for $i from 1 through $menuItemCount + 1 {
+  //     $angle:(($pi - $openingAngle) / 2) + (($openingAngle / $menuItemCount) * ($i - 1));
+  //     &:nth-child(#{$i}) {
+  //       transform: translate3d(cos($angle) * $openDistance, sin($angle) * $openDistance, 0);
+  //     }
+  //   }
+  // }
+
+  &.isOpen.expandUp .hbgrMenuItem {
+    @for $i from 1 through $menuItemCount + 1 {
+      &:nth-child(#{$i}) { transform: translate3d(0, -($ballSize * $i + 5px * ($i - 1)), 0); }
+    }
+  }
+
+  .hbgrSubmenu {
+    background: $activeColor;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 200px;
+    color: white;
+    position: absolute;
+    transform-origin: right bottom;
+    transform: translate3d(-80%, -100%, 0) scale(0);
+    margin-top: -20px;
+    margin-left: -5px;
+
+    &.active {
+      transition: transform .3s cubic-bezier(0, 0, .25, 1);
+      transform: translate3d(-100%, -100%, 0) scale(1);
+    }
+  }
+
+  .hbgrSubmenuItem {
+    width: 100%;
+    padding: 0 10px;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+
+    &.isCurrent {
+      pointer-events: none;
+      background: #EEE;
+      font-size: 1.2em;
+      color: $activeColor;
+    }
+  }
+}

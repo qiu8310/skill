@@ -1,0 +1,43 @@
+/**
+ * Create by Mora at 2017-11-09 13:34
+ * All right reserved
+ */
+
+.pExploreV3 {
+  .head {
+    padding: 20px;
+    line-height: 34px;
+
+    .name {
+      display: block;
+      font-size: 24px;
+      color: black;
+      font-weight: bold;
+    }
+
+    .all {
+      font-size: 12px;
+      color: #9B9B9B;
+    }
+
+    strong {
+      color: #4A4A4A;
+    }
+  }
+
+  .test {
+    margin: 0 20px 15px;
+  }
+
+  .maps {
+    padding: 0 20px;
+  }
+  .map {
+    float: left;
+    margin-bottom: 15px;
+    border-radius: 4px;
+  }
+  .map:nth-child(2n + 1) {
+    margin-right: 15px;
+  }
+}

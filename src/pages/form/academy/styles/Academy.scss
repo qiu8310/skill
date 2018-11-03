@@ -1,0 +1,43 @@
+/**
+ * Create by Mora at 2017-12-19 16:38
+ * All right reserved
+ */
+
+.weui-search-bar {
+  background: #000;
+  display: block;
+  border: 0;
+  &::before, &::after {
+    display: none;
+  }
+}
+.pAcademy {
+  .weui-tabbar__item {
+    .weui-tabbar__icon {
+      margin-top: 5px;
+    }
+    box-sizing: content-box;
+    padding-top: 0;
+    padding-bottom: constant(safe-area-inset-bottom); // fix iPhoneX bottom area
+  }
+  .weui-tabbar__item svg {
+    width: 23px;
+    height: 23px;
+    margin: 2px;
+  }
+  .weui-tabbar__item:nth-child(n + 4) svg {
+    width: 21px;
+    height: 21px;
+    margin: 3px;
+  }
+
+  .weui-tabbar__item {
+    color: #333;
+  }
+  .weui-bar__item_on {
+    background: #1B1A20;
+    .weui-tabbar__icon, .weui-tabbar__label {
+      color: $activeColor;
+    }
+  }
+}

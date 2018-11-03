@@ -1,0 +1,42 @@
+.pSignIn {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url(/common/blur-bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    will-change: transform; // 因为用了 fixed 布局，所以要用它来触发 GPU 渲染
+    z-index: 1;
+  }
+
+  .h1 {
+    color: #FFF;
+    font-size: 36px;
+    margin: 28px 0;
+    text-align: center;
+  }
+
+  .box {
+    position: relative;
+    z-index: 2;
+    width: 540px;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, .55);
+    color: #FFF;
+    padding: 32px;
+
+    label {
+      color: #FFF !important;
+      &::before {
+        display: none;
+      }
+    }
+  }
+}

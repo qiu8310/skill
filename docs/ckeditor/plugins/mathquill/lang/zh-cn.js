@@ -1,0 +1,1 @@
+﻿CKEDITOR.plugins.setLang("mathquill","zh-cn",{insert:"插入数学公式",edit:"编辑数学公式",dialogTitle:"数学公式编辑器",inputMath:"在此输入数学公式：",insertLine4:"插入4条下划线",insertLine8:"插入8条下划线"});

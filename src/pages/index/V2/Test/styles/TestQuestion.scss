@@ -1,0 +1,76 @@
+/**
+ * Create by Mora at 2017-10-12 15:26
+ * All right reserved
+ */
+
+.pTestQuestion {
+  .progress {
+    position: relative;
+    width: 320px;
+    height: 10px;
+    margin: 37px auto 45px;
+    border-radius: 6px;
+    background: #EBEBEB;
+
+    .done {
+      transition: width .3s;
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      border-radius: 6px;
+      background: $activeColor;
+    }
+
+    .dot {
+      position: absolute;
+      right: -10px;
+      top: -5px;
+      display: block;
+      width: 20px;
+      height: 20px;
+      border: 2px solid $activeColor;
+      background: white;
+    }
+  }
+
+  .number {
+    color: $activeColor;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 14px;
+  }
+
+  .title {
+    font-size: 16px;
+    padding: 0 15px;
+  }
+
+  .images {
+    margin-top: 30px;
+    padding: 0 15px;
+  }
+
+  .choices {
+    margin-top: 50px;
+    padding: 0 15px;
+  }
+
+  .choice {
+    width: 120px;
+    height: 120px;
+    border: 3px solid #D8D8D8;
+    line-height: 114px;
+    text-align: center;
+    font-size: 24px;
+
+    p {
+      font-size: 14px;
+      line-height: 50px;
+    }
+  }
+
+  .isImageChoice .choice {
+    border: none;
+  }
+}
